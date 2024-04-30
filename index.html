@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RustResot</title>
+
+  <link rel="preload" href="./fonts/Manrope-Regular.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Medium.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-SemiBold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-Bold.woff2" type="font/woff2" as="font">
+  <link rel="preload" href="./fonts/Manrope-ExtraBold.woff2" type="font/woff2" as="font">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicons/site.webmanifest">
+  <link rel="mask-icon" href="./img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body class="page">
+  <h1 class="visually-hidden">RustResort</h1>
+  <div class="promo">
+    <div class="promo__wrapper">
+      <header class="promo__main-header main-header">
+        <a class="main-header__logo logo" href="#">
+          <img src="./img/logo.svg" alt="RustResot">
+        </a>
+
+        <nav class="main-header__site-nav site-nav">
+          <ul class="site-nav__list">
+            <li>
+              <a href="#" class="site-nav__link">Сервера</a>
+            </li>
+            <li>
+              <a href="#" class="site-nav__link">Магазин</a>
+            </li>
+            <li>
+              <a href="#" class="site-nav__link">Компендиум</a>
+            </li>
+            <li>
+              <a href="#" class="site-nav__link">
+                Рейтинг
+                <svg width="25" height="24">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="site-nav__link">Кланы</a>
+            </li>
+            <li>
+              <a href="#" class="site-nav__link site-nav__link--arrow">
+                Информация
+                <svg width="25" height="24">
+                  <use xlink:href="./img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="main-header__user-options user-options">
+          <button class="user-options__lang">
+            <span>RU</span>
+            <svg width="25" height="24">
+              <use xlink:href="./img/sprite.svg#arrow"></use>
+            </svg>
+          </button>
+
+          <button class="user-options__notice">
+            <svg width="25" height="24">
+              <use xlink:href="./img/sprite.svg#bell"></use>
+            </svg>
+          </button>
+
+          <a class="user-options__login" href="#">
+            <svg width="35" height="35">
+              <use xlink:href="./img/sprite.svg#person"></use>
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <div class="promo__content">
+        <b class="promo__slogan">Ваша битва за выживание начинается в <span>RustResort</span></b>
+        <p class="promo__description">Получите незабываемый игровой опыт, сочетающий стратегию и изобретательность</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="servers">
+    <div class="servers__header">
+      <h2 class="servers__title title">Выберите сервер</h2>
+      <a class="servers__link button" href="#">Подробнее о серверах</a>
+    </div>
+
+    <div class="servers__list">
+      <article class="server">
+        <div class="server__labels">
+          <span class="server__label server__label--produceral">Produceral map</span>
+          <span class="server__label server__label--nolimit">Nolimit</span>
+        </div>
+        <div class="server__info">
+          <div class="server__represent">
+            <h2 class="server__name">Thursday 2X</h2>
+            <span class="server__count-players">432/500</span>
+          </div>
+          <span class="server__ip">46.174.52.218:28025</span>
+        </div>
+        <div class="server__wipe-timer">Вайп через 02:21:34</div>
+        <button class="server__connect button button--orange">Подключиться</button>
+      </article>
+
+      <article class="server">
+        <div class="server__labels">
+          <span class="server__label server__label--produceral">Produceral map</span>
+        </div>
+        <div class="server__info">
+          <div class="server__represent">
+            <h2 class="server__name">Monday 2X</h2>
+            <span class="server__count-players">432/500</span>
+          </div>
+          <span class="server__ip">46.174.52.218:28025</span>
+        </div>
+        <div class="server__wipe-timer">Вайп через 02:21:34</div>
+        <button class="server__connect button button--orange">Подключиться</button>
+      </article>
+
+      <article class="server">
+        <div class="server__info">
+          <div class="server__represent">
+            <h2 class="server__name">EU Main</h2>
+            <span class="server__count-players">432/500</span>
+          </div>
+          <span class="server__ip">46.174.52.218:28025</span>
+        </div>
+        <div class="server__wipe-timer">Вайп через 02:21:34</div>
+        <button class="server__connect button button--orange">Подключиться</button>
+      </article>
+
+      <article class="server">
+        <div class="server__labels">
+          <span class="server__label server__label--nolimit">Nolimit</span>
+        </div>
+        <div class="server__info">
+          <div class="server__represent">
+            <h2 class="server__name">Trio 2X</h2>
+            <span class="server__count-players">432/500</span>
+          </div>
+          <span class="server__ip">46.174.52.218:28025</span>
+        </div>
+        <div class="server__wipe-timer">Вайп через 02:21:34</div>
+        <button class="server__connect button button--orange">Подключиться</button>
+      </article>
+    </div>
+  </div>
+
+  <div class="information">
+    <div class="information__item discord">
+      <div class="discord__players">
+        <div class="discord__avatar">
+          <picture class="about__image">
+            <source srcset="img/avatars.webp" type="image/webp">
+            <img src="./img/avatars.jpg" alt="Workspace">
+          </picture>
+        </div>
+        Более 1 200+ игроков уже с нами!
+      </div>
+
+      <b class="discord__slogan">
+        Станьте частью нашего сообщества
+        <span class="discord__name">
+          <span class="discord__wrap-icon"></span>Discord
+        </span>
+      </b>
+
+      <a class="discord__button button button--block" href="#">Присоединиться к Discord</a>
+    </div>
+
+    <div class="information__item shop">
+      <span class="shop__text">Улучшите свою игру с&nbsp;помощью предметов из&nbsp;нашего магазина</span>
+
+      <a class="shop__link button button--block" href="#">В магазин</a>
+    </div>
+
+    <div class="information__item premium-info">
+      <span class="premium-info__text">Получайте уникальные награды, выполняя задания компендиума</span>
+
+      <a class="premium-info__link button button--block" href="#">Подробнее</a>
+
+      <div class="premium-info__label">Новый сезон</div>
+    </div>
+
+    <div class="information__item leaders">
+      <div class="leaders__boxs">
+        <a class="box box--win" href="#">
+          <svg class="box__frame" width="94" viewBox="0 0 94 105">
+            <path fill="url(#lider1)" stroke="var(--_stroke-color)" stroke-width="3"
+              d="M92.5 72.8256V32.0272C92.5 27.0275 89.7368 22.4372 85.3185 20.0971L53.3185 3.14905C49.3662 1.05582 44.6338 1.05582 40.6815 3.14905L8.68151 20.0971C4.26321 22.4371 1.5 27.0275 1.5 32.0272V72.8256C1.5 77.9122 4.35919 82.5671 8.89625 84.8669L40.8962 101.088C44.733 103.033 49.267 103.033 53.1038 101.088L85.1038 84.8669C89.6408 82.5671 92.5 77.9122 92.5 72.8256Z" />
+            <defs>
+              <pattern id="lider1" x="0" y="0" patternUnits="objectBoundingBox" width="100%" height="100%">
+                <image width="100%" height="100%" href="./img/lider-1.png"></image>
+              </pattern>
+            </defs>
+          </svg>
+          <div class="count">1</div>
+        </a>
+
+        <a class="box" href="#">
+          <svg class="box__frame" width="94" viewBox="0 0 94 105">
+            <path fill="url(#lider2)" stroke="var(--_stroke-color)" stroke-width="3"
+              d="M92.5 72.8256V32.0272C92.5 27.0275 89.7368 22.4372 85.3185 20.0971L53.3185 3.14905C49.3662 1.05582 44.6338 1.05582 40.6815 3.14905L8.68151 20.0971C4.26321 22.4371 1.5 27.0275 1.5 32.0272V72.8256C1.5 77.9122 4.35919 82.5671 8.89625 84.8669L40.8962 101.088C44.733 103.033 49.267 103.033 53.1038 101.088L85.1038 84.8669C89.6408 82.5671 92.5 77.9122 92.5 72.8256Z" />
+            <defs>
+              <pattern id="lider2" x="0" y="0" patternUnits="objectBoundingBox" width="100%" height="100%">
+                <image width="100%" height="100%" href="./img/lider-2.png"></image>
+              </pattern>
+            </defs>
+          </svg>
+          <div class="count">2</div>
+        </a>
+
+        <a class="box" href="#">
+          <svg class="box__frame" width="94" viewBox="0 0 94 105">
+            <path fill="url(#lider3)" stroke="var(--_stroke-color)" stroke-width="3"
+              d="M92.5 72.8256V32.0272C92.5 27.0275 89.7368 22.4372 85.3185 20.0971L53.3185 3.14905C49.3662 1.05582 44.6338 1.05582 40.6815 3.14905L8.68151 20.0971C4.26321 22.4371 1.5 27.0275 1.5 32.0272V72.8256C1.5 77.9122 4.35919 82.5671 8.89625 84.8669L40.8962 101.088C44.733 103.033 49.267 103.033 53.1038 101.088L85.1038 84.8669C89.6408 82.5671 92.5 77.9122 92.5 72.8256Z" />
+            <defs>
+              <pattern id="lider3" x="0" y="0" patternUnits="objectBoundingBox" width="100%" height="100%">
+                <image width="100%" height="100%" href="./img/lider-3.png"></image>
+              </pattern>
+            </defs>
+          </svg>
+          <div class="count">3</div>
+        </a>
+      </div>
+
+      <span class="leaders__text">Отслеживайте свой прогресс и соревнуйтесь с другими игроками</span>
+
+      <a class="leaders__link button button--block" href="#">Таблица лидеров</a>
+    </div>
+  </div>
+
+  <div class="products">
+    <div class="products__header">
+      <h2 class="products__title title">Новинки в магазине</h2>
+      <a class="products__link button" href="#">Все товары</a>
+    </div>
+    <div class="products__list">
+      <a href="#" class="product">
+        <div class="product__rest-count">Осталось 230 шт.</div>
+
+        <img class="product__image" src="./img/product-item-1.png" alt="5.56R Ammo" loading="lazy">
+
+        <div class="product__text-info">
+          <span class="product__title">5.56R Ammo</span>
+          <span class="product__price">60 ₽</span>
+        </div>
+      </a>
+      <a href="#" class="product">
+        <img class="product__image" src="./img/product-item-2.png" alt="5.56R Ammo" loading="lazy">
+
+        <div class="product__text-info">
+          <span class="product__title">5.56R Ammo</span>
+          <span class="product__price">60 ₽</span>
+        </div>
+      </a>
+      <a href="#" class="product product--bg">
+        <div class="product__availability-timer">Доступен еще 02:21:34</div>
+
+        <img class="product__image product__image--big" src="./img/product-item-3.png" alt="Blackout Jacket"
+          loading="lazy">
+
+        <div class="product__text-info">
+          <span class="product__title">Blackout Jacket</span>
+          <span class="product__price">60 ₽</span>
+        </div>
+      </a>
+      <a href="#" class="product">
+        <img class="product__image" src="./img/product-item-1.png" alt="5.56R Ammo" loading="lazy">
+
+        <div class="product__text-info">
+          <span class="product__title">5.56R Ammo</span>
+          <span class="product__price">60 ₽</span>
+        </div>
+      </a>
+    </div>
+    <button class="products__button button button--transparent">Показать еще</button>
+  </div>
+
+  <footer class="main-footer">
+    <div class="main-footer__wrapper">
+      <div class="main-footer__main">
+        <div class="main-footer__column">
+          <a class="main-footer__logo logo" href="#">
+            <img src="./img/logo.svg" alt="RustResot">
+          </a>
+          <p class="main-footer__goal">Единственная цель в Rust - выжить. Сделайте все возможное, чтобы продержаться еще
+            одну ночь.</p>
+          <div class="main-footer__user-options user-options">
+            <button class="user-options__lang">
+              <span>RU</span>
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 10L12 14L16.5 10" stroke="#FFFFFF" stroke-opacity="var(--stroke-opacity)"
+                  stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <ul class="main-footer__navigation-topics">
+          <li class="topic">
+            <h2 class="topic__title">Игра</h2>
+            <ul class="topic__navigation">
+              <li class="topic__item">
+                <a class="topic__link" href="#">Сервера</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Магазин</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Рейтинг</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Кланы</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Компендиум</a>
+              </li>
+            </ul>
+          </li>
+          <li class="topic">
+            <h2 class="topic__title">Информация</h2>
+            <ul class="topic__navigation">
+              <li class="topic__item">
+                <a class="topic__link" href="#">Новости</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Баны</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Гайды</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Ивенты</a>
+              </li>
+            </ul>
+          </li>
+          <li class="topic">
+            <h2 class="topic__title">Поддержка</h2>
+            <ul class="topic__navigation">
+              <li class="topic__item">
+                <a class="topic__link" href="#">Помощь</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Тикеты</a>
+              </li>
+              <li class="topic__item">
+                <a class="topic__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="main-footer__info">
+        <p class="main-footer__copyright">© 2024 «RustResort»</p>
+        <div class="main-footer__info-right">
+          <a class="main-footer__policy" href="#">Политика конфиденциальности</a>
+          <p class="main-footer__developed">
+            <svg width="19" height="20">
+              <use xlink:href="./img/sprite.svg#developed"></use>
+            </svg>
+            Developed by Unsimple World
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -20,6 +20,11 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <meta name="keywords"
+    content="RustResot, серверы Rust, выживание, онлайн-игры, PvP, базы, крафтинг, выживание в открытом мире, игровое сообщество">
+  <meta name="description"
+    content="Присоединяйтесь к захватывающему миру выживания в игре Rust с RustResot. Наши серверы предлагают уникальные возможности для игры в PvP, строительства баз, крафтинга и многое другое. Присоединяйтесь к нашему игровому сообществу сегодня!">
+
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -29,7 +34,7 @@
     <div class="promo__wrapper">
       <header class="promo__main-header main-header">
         <a class="main-header__logo logo" href="#">
-          <img src="./img/logo.svg" alt="RustResot">
+          <img src="./img/logo.svg" width="232" height="56" alt="RustResot">
         </a>
 
         <nav class="main-header__site-nav site-nav">
@@ -66,20 +71,20 @@
         </nav>
 
         <div class="main-header__user-options user-options">
-          <button class="user-options__lang">
+          <button class="user-options__lang" type="button" aria-label="Изменить язык">
             <span>RU</span>
             <svg width="25" height="24">
               <use xlink:href="./img/sprite.svg#arrow"></use>
             </svg>
           </button>
 
-          <button class="user-options__notice">
+          <button class="user-options__notice" type="button" aria-label="Уведомления">
             <svg width="25" height="24">
               <use xlink:href="./img/sprite.svg#bell"></use>
             </svg>
           </button>
 
-          <a class="user-options__login" href="#">
+          <a class="user-options__login" href="#" aria-label="Личный кабинет">
             <svg width="35" height="35">
               <use xlink:href="./img/sprite.svg#person"></use>
             </svg>
@@ -114,7 +119,7 @@
           <span class="server__ip">46.174.52.218:28025</span>
         </div>
         <div class="server__wipe-timer">Вайп через 02:21:34</div>
-        <button class="server__connect button button--orange">Подключиться</button>
+        <button class="server__connect button button--orange" type="button">Подключиться</button>
       </article>
 
       <article class="server">
@@ -129,7 +134,7 @@
           <span class="server__ip">46.174.52.218:28025</span>
         </div>
         <div class="server__wipe-timer">Вайп через 02:21:34</div>
-        <button class="server__connect button button--orange">Подключиться</button>
+        <button class="server__connect button button--orange" type="button">Подключиться</button>
       </article>
 
       <article class="server">
@@ -141,7 +146,7 @@
           <span class="server__ip">46.174.52.218:28025</span>
         </div>
         <div class="server__wipe-timer">Вайп через 02:21:34</div>
-        <button class="server__connect button button--orange">Подключиться</button>
+        <button class="server__connect button button--orange" type="button">Подключиться</button>
       </article>
 
       <article class="server">
@@ -156,7 +161,7 @@
           <span class="server__ip">46.174.52.218:28025</span>
         </div>
         <div class="server__wipe-timer">Вайп через 02:21:34</div>
-        <button class="server__connect button button--orange">Подключиться</button>
+        <button class="server__connect button button--orange" type="button">Подключиться</button>
       </article>
     </div>
   </div>
@@ -166,8 +171,8 @@
       <div class="discord__players">
         <div class="discord__avatar">
           <picture class="about__image">
-            <source srcset="img/avatars.webp" type="image/webp">
-            <img src="./img/avatars.jpg" alt="Workspace">
+            <source srcset="./img/avatars.webp" type="image/webp">
+            <img src="./img/avatars.jpg" width="112" height="40" alt="Workspace" loading="lazy">
           </picture>
         </div>
         Более 1 200+ игроков уже с нами!
@@ -254,7 +259,10 @@
       <a href="#" class="product">
         <div class="product__rest-count">Осталось 230 шт.</div>
 
-        <img class="product__image" src="./img/product-item-1.png" alt="5.56R Ammo" loading="lazy">
+        <picture class="product__image">
+          <source srcset="./img/product-item-1.webp" type="image/webp">
+          <img src="./img/product-item-1.png" width="188" height="188" alt="5.56R Ammo" loading="lazy">
+        </picture>
 
         <div class="product__text-info">
           <span class="product__title">5.56R Ammo</span>
@@ -262,18 +270,23 @@
         </div>
       </a>
       <a href="#" class="product">
-        <img class="product__image" src="./img/product-item-2.png" alt="5.56R Ammo" loading="lazy">
+        <picture class="product__image">
+          <source srcset="./img/product-item-2.webp" type="image/webp">
+          <img src="./img/product-item-2.png" width="188" height="188" alt="HV 5.56R Ammo" loading="lazy">
+        </picture>
 
         <div class="product__text-info">
-          <span class="product__title">5.56R Ammo</span>
+          <span class="product__title">HV 5.56R Ammo</span>
           <span class="product__price">60 ₽</span>
         </div>
       </a>
       <a href="#" class="product product--bg">
         <div class="product__availability-timer">Доступен еще 02:21:34</div>
 
-        <img class="product__image product__image--big" src="./img/product-item-3.png" alt="Blackout Jacket"
-          loading="lazy">
+        <picture class="product__image product__image--big">
+          <source srcset="./img/product-item-3.webp" type="image/webp">
+          <img src="./img/product-item-3.png" width="234" height="234" alt="Blackout Jacket" loading="lazy">
+        </picture>
 
         <div class="product__text-info">
           <span class="product__title">Blackout Jacket</span>
@@ -281,7 +294,10 @@
         </div>
       </a>
       <a href="#" class="product">
-        <img class="product__image" src="./img/product-item-1.png" alt="5.56R Ammo" loading="lazy">
+        <picture class="product__image">
+          <source srcset="./img/product-item-1.webp" type="image/webp">
+          <img src="./img/product-item-1.png" width="188" height="188" alt="5.56R Ammo" loading="lazy">
+        </picture>
 
         <div class="product__text-info">
           <span class="product__title">5.56R Ammo</span>
@@ -289,7 +305,7 @@
         </div>
       </a>
     </div>
-    <button class="products__button button button--transparent">Показать еще</button>
+    <button class="products__button button button--transparent" type="button">Показать еще</button>
   </div>
 
   <footer class="main-footer">
@@ -297,12 +313,12 @@
       <div class="main-footer__main">
         <div class="main-footer__column">
           <a class="main-footer__logo logo" href="#">
-            <img src="./img/logo.svg" alt="RustResot">
+            <img src="./img/logo.svg" width="198" height="48" alt="RustResot">
           </a>
           <p class="main-footer__goal">Единственная цель в Rust - выжить. Сделайте все возможное, чтобы продержаться еще
             одну ночь.</p>
           <div class="main-footer__user-options user-options">
-            <button class="user-options__lang">
+            <button class="user-options__lang" type="button" aria-label="Изменить язык">
               <span>RU</span>
               <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.5 10L12 14L16.5 10" stroke="#FFFFFF" stroke-opacity="var(--stroke-opacity)"
